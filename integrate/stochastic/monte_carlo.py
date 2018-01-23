@@ -18,4 +18,4 @@ def monte_2d(f, v, domain, trials):
    idx = np.where(v_eval < 1.0)
    points_inside = v_eval[idx]
    k = points_inside.size
-   return area * k / trials
+   return area * k / float(trials)
